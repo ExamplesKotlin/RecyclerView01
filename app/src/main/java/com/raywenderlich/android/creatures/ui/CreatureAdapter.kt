@@ -29,6 +29,7 @@ class CreatureAdapter(private val creatures: List<Creature>) : RecyclerView.Adap
       val context = itemView.context
       itemView.creatureImage.setImageResource(context.resources.getIdentifier(creature.uri, null, context.packageName))
       itemView.txtFullName.text = creature.fullName
+      itemView.txtNickName.text = creature.nickname
     }
 
   }
