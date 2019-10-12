@@ -6,9 +6,14 @@
   android:layout_height="@dimen/list_item_creature_height">
 
   <ImageView
-    android:id="@+id/imageView"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
+    android:id="@+id/creatureImage"
+    android:layout_width="@dimen/list_item_creature_height"
+    android:layout_height="@dimen/list_item_creature_height"
+    android:layout_marginStart="@dimen/padding_standard"
+    android:contentDescription="@string/content_description_creature_image"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
     app:srcCompat="@drawable/creature_cat_derp" />
 
   <TextView
