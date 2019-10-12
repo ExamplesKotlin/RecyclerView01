@@ -16,7 +16,7 @@ class CreatureAdapter(private val creatures: List<Creature>) : RecyclerView.Adap
   override fun getItemCount() = creatures.size
 
   override fun onBindViewHolder(p0: ViewHolder, p1: Int) {
-    TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    
   }
 
   class ViewHolder(v: View) : RecyclerView.ViewHolder(v) {
