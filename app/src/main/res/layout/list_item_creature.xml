@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-  xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
   android:layout_height="@dimen/list_item_creature_height">
 
@@ -11,14 +11,25 @@
     android:layout_height="@dimen/list_item_creature_height"
     android:layout_marginStart="@dimen/padding_standard"
     android:contentDescription="@string/content_description_creature_image"
-    app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
     app:srcCompat="@drawable/creature_cat_derp" />
 
   <TextView
     android:id="@+id/textView"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="TextView" />
+    android:paddingStart="@dimen/padding_standard"
+    android:paddingTop="@dimen/padding_half"
+    android:paddingEnd="@dimen/padding_standard"
+    android:paddingBottom="@dimen/padding_half"
+    android:textColor="@android:color/black"
+    android:textSize="@dimen/dimen_creature_text_size"
+    android:textStyle="bold"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toEndOf="@+id/creatureImage"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:text="Full Name" />
+
 </android.support.constraint.ConstraintLayout>
