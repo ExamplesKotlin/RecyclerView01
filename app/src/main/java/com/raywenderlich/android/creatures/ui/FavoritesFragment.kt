@@ -31,14 +31,14 @@
 package com.raywenderlich.android.creatures.ui
 
 import android.os.Bundle
-import android.support.v4.app.Fragment
+import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.raywenderlich.android.creatures.R
 
 
-class FavoritesFragment : Fragment() {
+class FavoritesFragment : androidx.fragment.app.Fragment() {
 
   companion object {
     fun newInstance(): FavoritesFragment {

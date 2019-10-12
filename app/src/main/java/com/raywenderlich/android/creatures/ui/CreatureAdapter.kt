@@ -1,6 +1,6 @@
 package com.raywenderlich.android.creatures.ui
 
-import android.support.v7.widget.RecyclerView
+import androidx.recyclerview.widget.RecyclerView
 import android.view.View
 import android.view.ViewGroup
 import com.raywenderlich.android.creatures.R
@@ -16,7 +16,7 @@ class CreatureAdapter(private val creatures: List<Creature>) : RecyclerView.Adap
   override fun getItemCount() = creatures.size
 
   override fun onBindViewHolder(p0: ViewHolder, p1: Int) {
-    
+
   }
 
   class ViewHolder(v: View) : RecyclerView.ViewHolder(v) {

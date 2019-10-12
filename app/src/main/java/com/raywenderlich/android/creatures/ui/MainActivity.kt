@@ -31,10 +31,10 @@
 package com.raywenderlich.android.creatures.ui
 
 import android.os.Bundle
-import android.support.design.widget.BottomNavigationView
-import android.support.v4.app.Fragment
-import android.support.v4.app.FragmentPagerAdapter
-import android.support.v7.app.AppCompatActivity
+import com.google.android.material.bottomnavigation.BottomNavigationView
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentPagerAdapter
+import androidx.appcompat.app.AppCompatActivity
 import com.raywenderlich.android.creatures.R
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -69,8 +69,8 @@ class MainActivity : AppCompatActivity() {
   }
 
   private fun setupViewPager() {
-    viewPager.adapter = object : FragmentPagerAdapter(supportFragmentManager) {
-      override fun getItem(position: Int): Fragment? {
+    viewPager.adapter = object : androidx.fragment.app.FragmentPagerAdapter(supportFragmentManager) {
+      override fun getItem(position: Int): androidx.fragment.app.Fragment? {
         when (position) {
           0 -> return AllFragment.newInstance()
           1 -> return FavoritesFragment.newInstance()
