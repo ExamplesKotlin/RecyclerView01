@@ -59,5 +59,6 @@ class AllFragment : Fragment() {
     super.onViewCreated(view, savedInstanceState)
 
     creatureRecyclerView.layoutManager = LinearLayoutManager(activity)
+    creatureRecyclerView.adapter = adapter
   }
 }
