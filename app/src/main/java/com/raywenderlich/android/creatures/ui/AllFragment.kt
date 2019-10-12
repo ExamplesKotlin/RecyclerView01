@@ -37,10 +37,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.raywenderlich.android.creatures.R
+import com.raywenderlich.android.creatures.model.CreatureStore
 import kotlinx.android.synthetic.main.fragment_all.*
 
 
 class AllFragment : Fragment() {
+
+  private val adapter = CreatureAdapter(CreatureStore.getCreatures())
 
   companion object {
     fun newInstance(): AllFragment {
