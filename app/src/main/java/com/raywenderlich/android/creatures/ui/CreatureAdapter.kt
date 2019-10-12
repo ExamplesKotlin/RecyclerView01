@@ -17,8 +17,8 @@ class CreatureAdapter(private val creatures: List<Creature>) : RecyclerView.Adap
 
   override fun getItemCount() = creatures.size
 
-  override fun onBindViewHolder(p0: ViewHolder, p1: Int) {
-
+  override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+    holder.bind(creatures[position])
   }
 
   class ViewHolder(v: View) : RecyclerView.ViewHolder(v) {
