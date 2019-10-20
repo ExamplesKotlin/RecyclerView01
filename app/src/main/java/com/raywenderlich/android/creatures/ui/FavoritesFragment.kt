@@ -63,7 +63,7 @@ class FavoritesFragment : androidx.fragment.app.Fragment() {
 
   override fun onResume() {
     super.onResume()
-    val favorites = CreatureStore.getFavoriteCreatures(activity) // Verificar esto ???hat
+    val favorites = activity?.let { CreatureStore.getFavoriteCreatures(it) }
     favorites?.let { adapter.updateCreatures(favorites) }
   }
 
