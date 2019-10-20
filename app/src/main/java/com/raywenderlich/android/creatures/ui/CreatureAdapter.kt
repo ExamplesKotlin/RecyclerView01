@@ -20,7 +20,7 @@ class CreatureAdapter(private val creatures: List<Creature>) : RecyclerView.Adap
     holder.bind(creatures[position])
   }
 
-  class ViewHolder(v: View) : RecyclerView.ViewHolder(v) {
+  class ViewHolder(v: View) : RecyclerView.ViewHolder(v), View.OnClickListener {
 
     private lateinit var creature: Creature
 
