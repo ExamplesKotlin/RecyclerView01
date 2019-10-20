@@ -36,5 +36,11 @@ class CreatureAdapter(private val creatures: List<Creature>) : RecyclerView.Adap
       itemView.txtNickName.text = creature.nickname
     }
 
+    override fun onClick(view: View) {
+      val context = view.context
+      val intent = CreatureActivity.newIntent(context, creature.id)
+      context.startActivity(intent)
+    }
+
   }
 }
